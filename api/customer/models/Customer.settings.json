@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": "customer info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "email": {
+      "default": "",
+      "type": "email"
+    },
+    "country": {
+      "default": "",
+      "type": "string"
+    },
+    "detail": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}
