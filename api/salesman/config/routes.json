@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/salesmen",
+      "handler": "Salesman.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salesmen/count",
+      "handler": "Salesman.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salesmen/:id",
+      "handler": "Salesman.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/salesmen",
+      "handler": "Salesman.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/salesmen/:id",
+      "handler": "Salesman.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/salesmen/:id",
+      "handler": "Salesman.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/salesmen/:id/relationships/:relation",
+      "handler": "Salesman.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/salesmen/:id/relationships/:relation",
+      "handler": "Salesman.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/salesmen/:id/relationships/:relation",
+      "handler": "Salesman.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

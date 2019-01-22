@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "salesmen",
+  "info": {
+    "name": "salesman",
+    "description": "salesman information"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "primary_email": {
+      "default": "",
+      "type": "email"
+    },
+    "customers": {
+      "collection": "customer",
+      "via": "salesman"
+    },
+    "gender": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    }
+  }
+}

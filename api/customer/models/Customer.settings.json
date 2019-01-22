@@ -26,6 +26,14 @@
     "detail": {
       "default": "",
       "type": "text"
+    },
+    "salesman": {
+      "model": "salesman",
+      "via": "customers"
+    },
+    "inquiries": {
+      "collection": "inquiry",
+      "via": "customer"
     }
   }
 }

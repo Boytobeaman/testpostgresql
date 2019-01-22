@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inquiries",
+      "handler": "Inquiry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inquiries/count",
+      "handler": "Inquiry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inquiries/:id",
+      "handler": "Inquiry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inquiries",
+      "handler": "Inquiry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inquiries/:id",
+      "handler": "Inquiry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inquiries/:id",
+      "handler": "Inquiry.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inquiries/:id/relationships/:relation",
+      "handler": "Inquiry.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inquiries/:id/relationships/:relation",
+      "handler": "Inquiry.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inquiries/:id/relationships/:relation",
+      "handler": "Inquiry.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

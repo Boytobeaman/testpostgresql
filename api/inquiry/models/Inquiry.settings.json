@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "inquiries",
+  "info": {
+    "name": "inquiry",
+    "description": "detail about the inquiry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "customer": {
+      "model": "customer",
+      "via": "inquiries"
+    },
+    "product_model": {
+      "default": "",
+      "type": "string"
+    },
+    "number": {
+      "default": "",
+      "type": "string"
+    },
+    "detail": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}
