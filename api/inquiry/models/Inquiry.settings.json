@@ -26,6 +26,28 @@
     "detail": {
       "default": "",
       "type": "text"
+    },
+    "salesman": {
+      "model": "salesman",
+      "via": "inquiries"
+    },
+    "status": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "start",
+        "in progress",
+        "success",
+        "failed"
+      ]
+    },
+    "source": {
+      "default": "",
+      "type": "string"
+    },
+    "for_company": {
+      "default": "",
+      "type": "string"
     }
   }
 }

@@ -30,6 +30,14 @@
         "male",
         "female"
       ]
+    },
+    "inquiries": {
+      "collection": "inquiry",
+      "via": "salesman"
+    },
+    "for_company": {
+      "default": "",
+      "type": "string"
     }
   }
 }

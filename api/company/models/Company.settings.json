@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "companies",
+  "info": {
+    "name": "company",
+    "description": "service company"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "company_name": {
+      "default": "",
+      "type": "string"
+    },
+    "owner": {
+      "default": "",
+      "type": "string"
+    },
+    "company_description": {
+      "default": "",
+      "type": "text"
+    },
+    "customers": {
+      "collection": "customer",
+      "via": "for_company"
+    }
+  }
+}

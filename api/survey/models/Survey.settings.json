@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "surveys",
+  "info": {
+    "name": "survey",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "survey_pure_json": {
+      "default": "",
+      "type": "json"
+    }
+  }
+}
